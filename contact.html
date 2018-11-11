@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
+   <head>
     <meta charset="UTF-8">
-    <title>IN SU BIN</title>
-    <style>
-           }
+    <title>Homework #1</title>
+       <style>
         /* header */
         #header {
             border:  0px none white;
@@ -13,7 +12,7 @@
         #headA {
             float: right;
             margin-left: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 100px;
         }
         #head img {
             width: 150px;
@@ -41,50 +40,30 @@
             font-style: normal;
             font-family: 'K2D', sans-serif;
             font-size : 14px;
-            color : ghostwhite;
+            color : black;
             text-decoration: none;
         }
         #main_menu a:hover {
             color : mediumpurple;
             font-family: 'K2D', sans-serif;
         }
-        /*내용*/
            body {
-            background-color: black;
-            color: antiquewhite;
-            text-align: center
-        }
-          h1  {
-            color: mediumpurple;
-            font-size: 30px;
-            font-family: 'K2D', sans-serif;
-            text-align: center;
-            text-shadow: 3px 6px 10px #777777;
-            margin-top: 100px;
-            }
-        h2  {
-            color: hotpink;
-            font-size: 20px;
-            text-align: center;
-            text-shadow: 2px 3px 3px #777777;
-            }
-        h3  {
-            color: lightpink;
-            font-size: 20px;
-            text-align: center;
-            }
-        #myphoto img {
-            border-radius: 60%
-        }
-          /* 저작권 및 정보 */
+               margin-left: 50px;
+               margin-right: 50px;
+           }
+           /* 저작권 및 정보 */
         #footer {
             border:  4px dotted pink;
             margin-top: 50px;
             padding: 20px;
             padding-left: 20px;
         }
+           #h1 {
+               margin-top: 100px;
+           }
+          
     </style>
-</head>
+    </head>
 <body>
    <!--  header -->
    <header id="header">
@@ -94,37 +73,59 @@
         <div id="headA">
             <ul id="main_menu">
                <li><a href="profile.html">PROFILE</a></li>
-               <li><a href="profile.html">CONTACT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
                <li><a href="hw01.html">HW01</a></li>
                <li><a href="hw02.html">HW02</a></li>
                <li><a href="hw03.html">HW03</a></li>
                <li><a href="hw04.html">HW04</a></li>
                <li><a href="hw05.html">HW05</a></li>
-               <li><a href="hw06.html">HW06</a></li>
                <li><a href="portfolio.html">PORTFOLIO</a></li>
             </ul>
         </div>
+          <br>
     </header>
-
-        <br>
-        <h1>Contents Programming ⌨️</h1>
-        <h2>디지털미디어디자인과</h2>
-        <h3>❣️인수빈❣️<br>1학년 B반 학번: 21861105</h3>
-       
-
-        <div id= myphoto>
-        <img src="./img/myphoto.jpg" alt="인수빈사진" width="400" height="400">
+    <h1>방문해주셔서 감사합니다.</h1>
+<!--       컨택-->
+        <div id="form">
+           <form>
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>
+                        <input type="text" name="mail">
+                        @
+                        <select name="emailsite">
+                            <option value="none">이메일주소</option>
+                            <option value="naver">gmail.com</option>
+                            <option value="google">naver.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="site">직접 입력</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="title"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><textarea name="message" id="" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="전송" class="button">
+                        <input type="reset" value="재설정" class="button"></td>
+                </tr>
+            </table>
+        </form>
         </div>
-        <br>
-        <a href="hw01.html">과제01</a> <br>     
-        <a href="hw02.html">과제02</a><br>
-        <a href="hw03.html">과제03</a><br>
-        <a href="hw04.html">과제04</a><br>
-        <a href="hw05.html">과제05</a><br>
-        <a href="hw06.html">과제06</a><br>
-        <a href="hw07.html">과제07</a><br>
         <footer>
-        <div id="footer">
+             <div id="footer">
             <p>
             copyrigt &copy; InSuBin all right reserved.
             <br>
@@ -133,6 +134,6 @@
             phone : 010-9189-7655
             </p>
         </div>
-   </footer>
+         </footer>
 </body>
 </html>
