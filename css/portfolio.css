@@ -1,0 +1,40 @@
+
+
+h1{
+    font-size: 30px;
+    color: black;
+}
+
+h2 {
+    color: #666666;
+    font-size: 20px;
+    margin-top: 10px;;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+#title {
+    margin: 70px auto 60px auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#wrapper {
+    position: absolute;
+    top: 230px;
+    z-index: 2000;
+}
+
+#cond img {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+footer {
+    margin-top: 80px;
+    position: relative;
+    
+}

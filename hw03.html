@@ -1,86 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>제주도 여행</title>
-      <style>
-        /* header */
-        #header {
-            border:  0px none white;
-            padding: 0px;
-        }
-        #headA {
-            float: right;
-            margin-left: 20px;
-            padding-bottom: 100px;
-        }
-        #head img {
-            width: 150px;
-            float: left;
-        }
-        #head img:hover {
-            background-color: rgba(255, 255, 224, 0.2);
-            color : white;
-        }
-         /* 메인 메뉴 */
-        }
-        #main_mune ul {
-            margin: 0px;
-            padding: 0px;
-            margin-top: 10px;
-        }
-        #main_menu li {
-            list-style-type: none;
-            display: inline-block;
-            padding: 0px;
-            margin-top: 20px;
-            margin-right: 100px;
-        }
-        #main_menu li a {
-            font-style: normal;
-            font-family: 'K2D', sans-serif;
-            font-size : 14px;
-            color : black;
-            text-decoration: none;
-        }
-        #main_menu a:hover {
-            color : mediumpurple;
-            font-family: 'K2D', sans-serif;
-        }
-          /* 저작권 및 정보 */
-        #footer {
-            border:  4px dotted pink;
-            margin-top: 50px;
-            padding: 20px;
-            padding-left: 20px;
-        }
-          #h1 {
-              margin-top: 100px;
-          }
-           </style>
+    <title>HW03</title>
+    <!--    css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
-<body>
-          <!--  header -->
-   <header id="header">
-        <div id="head">
-            <a href="index.html"><img src="./img/logo.png" alt="로고"></a>
-        </div>
+    <!--    헤더-->
+    <header>
         <div id="headA">
-            <ul id="main_menu">
-               <li><a href="profile.html">PROFILE</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-               <li><a href="hw01.html">HW01</a></li>
-               <li><a href="hw02.html">HW02</a></li>
-               <li><a href="hw03.html">HW03</a></li>
-               <li><a href="hw04.html">HW04</a></li>
-               <li><a href="hw05.html">HW05</a></li>
-               <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <h1><a href="index.html"><img src="./img/logo.png" title="logo"></a></h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">About</a>
+                </li>
+                <li class='active sub'>
+                    <a href="#">HomeWork</a>
+                    <ul>
+                        <li class='sub'>
+                            <a href="#">HTML</a>
+                            <ul>
+                                <li>
+                                    <a href="hw01.html">HWO1</a>
+                                </li>
+                                <li>
+                                    <a href="hw02.html">HWO2</a>
+                                </li>
+                                <li class='last'>
+                                    <a href="hw03.html">HWO3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='sub'>
+                            <a href="#">CSS</a>
+                            <ul>
+                                <li>
+                                    <a href="hw04.html">HWO4</a>
+                                </li>
+                                <li>
+                                    <a href="hw05.html">HWO5</a>
+                                </li>
+                                <li>
+                                    <a href="hw06.html">HWO6</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">HWO7</a>
+                                </li>
+                               </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <br>
     </header>
-    <!-- 타이틀 -->
-    <div id=h1><h1>제주도 여행✿</h1></div>
+<body>
+    <!--   타이틀-->
+    <div id="wrapper" style="padding: 100px">
+  <div id=h1><h1>제주도 여행✿</h1></div>
 
     <!-- 목록 -->
        <h2>목차</h2>
@@ -118,7 +104,7 @@
             <img src=./img/wel.jpg alt="다랑쉬오름" title="다랑쉬오름" lenth=700 width=600>
             <li>비양도</li>
             <img src=./img/B.jpg alt="비양도" title="비양도" lenth=700 width=600>
-    
+        </ul>
     <!-- 소제목4 -->
     <h3>04 제주 여행시 주의사항</h3>
     <ol>
@@ -187,15 +173,16 @@
     <a href="https://ko.wikipedia.org/wiki/제주특별자치도" alt="위키백과"> 제주특별자치도-위키백과</a><br>
         <a href=" https://blog.naver.com/eiderfriends/221344440768" alt="사진출처"> 네이버 블로그</a>
         
-     <footer>
+    
+    <!--    푸터-->
+    <footer>
         <div id="footer">
             <p>
-            copyrigt &copy; InSuBin all right reserved.
-            <br>
-            e-mail : shes5474@naver.com
-            <br>
-            phone : 010-9189-7655
+                Copyright &copy; <span><a href="./index.html">SUBIN</a></span>. All Rights Reserved <br>
+                E-mail:shes5474@naver.com
             </p>
         </div>
-   </footer>    
-    
+    </footer>
+    </div>
+</body>
+</html>

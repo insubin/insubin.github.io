@@ -1,125 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
-    <title>워너원?</title>
-    <style>
-        /* header */
-        #header {
-            border:  0px none white;
-            padding: 0px;
-        }
-        #headA {
-            float: right;
-            margin-left: 20px;
-            padding-bottom: 100px;
-        }
-        #head img {
-            width: 150px;
-            float: left;
-        }
-        #head img:hover {
-            background-color: rgba(255, 255, 224, 0.2);
-            color : white;
-        }
-         /* 메인 메뉴 */
-        }
-        #main_mune ul {
-            margin: 0px;
-            padding: 0px;
-            margin-top: 10px;
-        }
-        #main_menu li {
-            list-style-type: none;
-            display: inline-block;
-            padding: 0px;
-            margin-top: 20px;
-            margin-right: 100px;
-        }
-        #main_menu li a {
-            font-style: normal;
-            font-family: 'K2D', sans-serif;
-            font-size : 14px;
-            color : black;
-            text-decoration: none;
-        }
-        #main_menu a:hover {
-            color : mediumpurple;
-            font-family: 'K2D', sans-serif;
-        }
-        /*내용*/
-         body {
-             background-color: mediumturquoise;
-             color: white;
-             margin-left: 50px;
-             margin-right: 50px;
-        }
-       
-         h1 {
-        color: black; 
-        font-family: 'Arial', self serif;
-        font-size: 70px;
-        text-align: center;
-        text-shadow: 5px 6px 8px #444444
-        }
-        h3 { 
-            color: white;
-        }
-        #img_main img{
-            border-radius :10%;
-        }
-        #h1 {
-            text-align: center;
-            color: cornflowerblue;
-            font-size: 30px;
-        }
-        #h2 {
-            text-align: center;
-            color: cornflowerblue;
-            font-size: 30px;
-        }
-         #h3 {
-            text-align: center;
-            color: cornflowerblue;
-            font-size: 30px;
-        }
-        #jaehwan img{
-            border-radius :10%;
-        }
-            #main {
-            margin-top: 250px;
-        }
-        
-        /* 저작권 및 정보 */
-        #footer {
-            border:  4px dotted pink;
-            margin-top: 50px;
-            padding: 20px;
-            padding-left: 20px;
-        }
-    </style>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <title>HW04</title>
+    <!--    css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hw_css/style_hw04.css">
 </head>
 <body>
-     <header id="header">
-        <div id="head">
-            <a href="index.html"><img src="./img/logo.png" alt="로고"></a>
-        </div>
+    <!--    헤더-->
+    <header>
         <div id="headA">
-            <ul id="main_menu">
-               <li><a href="profile.html">PROFILE</a></li>
-               <li><a href="hw01.html">HW01</a></li>
-               <li><a href="hw02.html">HW02</a></li>
-               <li><a href="hw03.html">HW03</a></li>
-               <li><a href="hw04.html">HW04</a></li>
-               <li><a href="hw05.html">HW05</a></li>
-               <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <h1><a href="index.html"><img src="./img/logo.png" title="logo"></a></h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">About</a>
+                </li>
+                <li class='active sub'>
+                    <a href="#">HomeWork</a>
+                    <ul>
+                        <li class='sub'>
+                            <a href="#">HTML</a>
+                            <ul>
+                                <li>
+                                    <a href="hw01.html">HWO1</a>
+                                </li>
+                                <li>
+                                    <a href="hw02.html">HWO2</a>
+                                </li>
+                                <li class='last'>
+                                    <a href="hw03.html">HWO3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='sub'>
+                            <a href="#">CSS</a>
+                            <ul>
+                                <li>
+                                    <a href="hw04.html">HWO4</a>
+                                </li>
+                                <li>
+                                    <a href="hw05.html">HWO5</a>
+                                </li>
+                                <li>
+                                    <a href="hw06.html">HWO6</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">HWO7</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </header>   
+    </header>
+
+    <!--본문 제목-->
+    <div id="wrapper" style="padding: 100px">
+    <div id="main"><h1>ABOUT WANNA•ONE</h1></div>
+        <div id="h1">WannaOne MEMBER</div>
         <br>
-        <div id="main"><h1>ABOUT WANNA•ONE</h1></div>
-        <hr>
-        <div id="h1">멤버별 나이 (생일순)</div>
         <ol>
             <li>윤지성 (91년생)</li>
             <li>하성운 (94년생)</li>
@@ -135,9 +86,8 @@
         </ol>
         
         <br>
-        <hr>
         <div id="h2">
-        ABOUT 김재환
+        Kim Jae Hwan        
         </div>
         <div id="jaehwan">
         <img src="./img/wowwow.jpg" alt="워너원" width="600px" height="400px">
@@ -156,15 +106,15 @@
             <br>공항고등학교(졸업)
             <br><ins>호원대학교 실용음악과 보컬전공(휴학)</ins> <br><em>2016년에 입학했다. 그 해 실음과 보컬전공의 신입학 경쟁률은 무려 수시 262:1, 정시 221:1이었다. <br>수시인지 정시인지 정확히 알려진 바 없으나, 어느 쪽이든 상당히 치열했다는 것. 정세운과 동기다.  </em></p>
             <li>별명</li>
-            <p>김재환의 대표적 별명은 <ins>순얼방음</ins>으로 유명하다. 여기서 순얼방음이란 순진한 얼굴에 방탕한 음색의 준말인데 프로듀스101 당시 순얼픽으로 주목받던 김재환이 sorry sorry 2조 무대에서 생각지못한 방탕함을 뽐내게되며 붙은 별명 되시겠다.
+            <p>김재환의 대표적 별명은 <ins>순얼방음</ins>으로 유명하다. 여기서 순얼방음이란 순진한 얼굴에 방탕한 음색의 준말인데 프로듀스101 당시 순얼픽으로 주목받던 김재환이 sorry sorry 2조 무대에서 생각지못한 방탕함을 뽐내게되며 붙은 별명 되시겠다.<br>
                
         </ul>
-        <hr>
         <div id=h3>수빈이의 추천영상 보기</div>
         
         <div id="img_main">
         <img src="./img/wannaone.JPG" alt="워너원" width="470px" height="700px">
         </div>
+        <br>
         <p>  <a href="https://youtu.be/J1L3nDC4mEk" alt="워너원 켜줘 뮤직비디오"> Wanna One (워너원) - '켜줘 (Light)' M/V</a>
         <br><a href="https://youtu.be/EVaV7AwqBWg" alt="워너원 에너제틱 뮤직비디오"> Wanna One (워너원) - 에너제틱 (Energetic) MV M/V</a>
         <br> <a href="https://youtu.be/7e2x_rN4MwA" alt="김재환 들었다 놨다 스페셜 스테이지"> KIM JAE HWAN (김재환) - Love Actually (들었다 놨다)</a>
@@ -176,16 +126,15 @@
         출처
         <br>
          <a href="https://namu.wiki/w/%EA%B9%80%EC%9E%AC%ED%99%98(Wanna%20One)" alt="김재환 출처"> 나무위키 김재환 </a>
-        <footer>
+    <!--    푸터-->
+    <footer>
         <div id="footer">
             <p>
-            copyrigt &copy; InSuBin all right reserved.
-            <br>
-            e-mail : shes5474@naver.com
-            <br>
-            phone : 010-9189-7655
+                Copyright &copy; <span><a href="./index.html">SUBIN</a></span>. All Rights Reserved <br>
+                E-mail: shes5474@naver.com
             </p>
         </div>
-   </footer>    
+    </footer>
+    </div>
 </body>
 </html>

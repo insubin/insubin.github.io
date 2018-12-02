@@ -1,131 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        /* header */
-        #header {
-            border:  0px none white;
-            padding: 0px;
-        }
-        #headA {
-            float: right;
-            margin-left: 20px;
-            padding-bottom: 100px;
-        }
-        #head img {
-            width: 150px;
-            float: left;
-        }
-        #head img:hover {
-            background-color: rgba(255, 255, 224, 0.2);
-            color : white;
-        }
-         /* 메인 메뉴 */
-        }
-        #main_mune ul {
-            margin: 0px;
-            padding: 0px;
-            margin-top: 10px;
-        }
-        #main_menu li {
-            list-style-type: none;
-            display: inline-block;
-            padding: 0px;
-            margin-top: 20px;
-            margin-right: 100px;
-        }
-        #main_menu li a {
-            font-style: normal;
-            font-family: 'K2D', sans-serif;
-            font-size : 14px;
-            color : black;
-            text-decoration: none;
-        }
-        #main_menu a:hover {
-            color : mediumpurple;
-            font-family: 'K2D', sans-serif;
-        }
-        /*body*/
-         body {
-             background-color: mediumturquoise;
-             color: white;
-             text-align: center;
-        }
-         h1 {
-        color: black; 
-        font-family: 'Arial', self serif;
-        font-size: 50px;
-        text-align: center;
-        text-shadow: 5px 6px 8px #444444
-        }
-        h3 { 
-            color: white;
-        }
-        #img_main img{
-            border-radius :100%;
-        }
-            #h1 {
-                margin-top: 250px;
-            }
-       
-        
-        /* 저작권 및 정보 */
-        #footer {
-            border:  4px dotted pink;
-            margin-top: 50px;
-            padding: 20px;
-            padding-left: 20px;
-        }
-    </style>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>portfolio</title>
+    <title>Portfolio</title>
+    <!--    css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
 </head>
+
 <body>
-     <header id="header">
-        <div id="head">
-            <a href="index.html"><img src="./img/logo.png" alt="로고"></a>
-        </div>
+    <!--    헤더-->
+     <header>
         <div id="headA">
-            <ul id="main_menu">
-               <li><a href="profile.html">PROFILE</a></li>
-               <li><a href="hw01.html">HW01</a></li>
-               <li><a href="hw02.html">HW02</a></li>
-               <li><a href="hw03.html">HW03</a></li>
-               <li><a href="hw04.html">HW04</a></li>
-               <li><a href="hw05.html">HW05</a></li>
-               <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <h1><a href="index.html"><img src="./img/logo.png" title="logo"></a></h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">About</a>
+                </li>
+                <li class='active sub'>
+                    <a href="#">HomeWork</a>
+                    <ul>
+                        <li class='sub'>
+                            <a href="#">HTML</a>
+                            <ul>
+                                <li>
+                                    <a href="hw01.html">HWO1</a>
+                                </li>
+                                <li>
+                                    <a href="hw02.html">HWO2</a>
+                                </li>
+                                <li class='last'>
+                                    <a href="hw03.html">HWO3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='sub'>
+                            <a href="#">CSS</a>
+                            <ul>
+                                <li>
+                                    <a href="hw04.html">HWO4</a>
+                                </li>
+                                <li>
+                                    <a href="hw05.html">HWO5</a>
+                                </li>
+                                <li>
+                                    <a href="hw06.html">HWO6</a>
+                                </li>
+                                <li>
+                                    <a href="hw07.html">HWO7</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </header>   
-       <br>
-        <div id="h1">
-        <h1>3D Design</h1>
-        </div>
+    </header>
+
+    <!--   타이틀-->
+
+ <div id="wrapper" style="padding: 100px">
+    <h1>3D Design</h1>
         <br>
         <img src="./img/3D.jpg" alt="3D" width="600" height="400">
         <br>
-        3D 디자인 시간에 만든 분무기를 배경합성 해보았습니다.
-        <hr>
-         <h1>콘텐츠 디자인</h1>
-        <img src="./img/2grid.jpg" alt="3D" width="300" height="900">
-        <hr>
-        <h1>콘텐츠 기획</h1>
+        <div id="3d">
+        <h2>3D 디자인 시간에 만든 분무기를 배경합성 해보았다.</h2>
+        </div>
+        
+         <h1>Content Design</h1>
+        <div id="cond"><img src="./img/2grid.jpg" alt="3D" width="300" height="900"></div>
+        
+        <h1>Content Planning</h1>
         <h3>저니맵</h3>
       <img src="./img/jn.png" alt="3D" width="700" height="400">
       <p>
       <h3>IA</h3>
       <img src="./img/ia.png" alt="3D" width="700" height="400">
+
+    <!--본문 끝-->
+
+
+    <div class="clear"></div>
     
-            <footer>
-            <div id= "footer">
-            <p>
-            copyrigt &copy; InSuBin all right reserved.
-            <br>
-            e-mail : shes5474@naver.com
-            <br>
-            phone : 010-9189-7655
-            </p>
-        </div>
-   </footer>    
+<!--    푸터-->
+    <footer>
+        Copyright &copy; <span><a href="./index.html">SUBIN</a></span>. All Rights Reserved <br>
+                E-mail: shes5474@naver.com
+    </footer>
+
 </body>
+
 </html>

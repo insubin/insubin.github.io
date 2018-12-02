@@ -1,0 +1,29 @@
+h1 {
+    font-family: "Arial";
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+
+#form {
+    border: dotted 3px purple;
+}
+
+
+/*        배치 및 여백*/
+#title {
+    margin: 50px;
+}
+
+
+#form {
+    margin : 100px auto;
+    padding: 15px;
+    width: 450px;
+    height: 230px;
+}
+
+
+#contact td{
+    padding: 5px 7px;
+}

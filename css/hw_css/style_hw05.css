@@ -1,0 +1,98 @@
+
+/*        공통 css*/
+body {
+    font-family: '나눔스퀘어';
+    background-color: floralwhite;
+}
+
+/*메뉴 css*/
+.menu > ul > li > a {
+    color: coral;
+}
+.menu > ul > li:hover > a {
+    color: black;
+}
+.menu > ul > li.sub::after {
+    border: 6px solid transparent;
+    border-top-color: coral;
+}
+.menu > ul > li:hover::after {
+    border-top-color: black;
+}
+.menu ul ul li a {
+    color: black;
+}
+.menu ul ul li:hover > a {
+    background-color: coral;
+    color: white;
+}
+
+
+/*        css*/
+
+h1 {
+    font-size: 50px;
+    color: coral;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: coral;
+}
+
+h3 {
+    font-size: 30px;
+    color: coral;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+ol {
+    font-size: 20px;
+    color: black;
+}
+
+
+p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+}
+
+
+a {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+
+/*        table style 모음*/
+
+table,
+td,
+th {
+    border: solid 2px coral;
+}
+
+tr {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 3px;
+}
+
+
+/*        배치 및 여백*/
+#wrapper {
+    padding: 100px;
+}
+
+
+#turn {
+    margin: 40px 0 20px 0;
+}
+
